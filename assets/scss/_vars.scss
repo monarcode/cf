@@ -1,0 +1,35 @@
+// main colors
+$primary-blue: #001E89;
+$primary-orange: #FF7A00;
+
+:root {
+    --clr-primary: #FF6600;
+    --clr-secondary: #993D00;
+    --clr-light: #FBF8F7;
+    --clr-dark: #421A00;
+    --clr-black: #000;
+    --clr-white: #fff;
+    --clr-grey: rgb(104, 104, 104);
+}
+
+$bg: #FBF8F7;
+
+$light: #E7E7E7;
+$light-alt: #F5F5F5;
+
+$grey-1: #333333;
+$grey-2: #4F4F4F;
+$grey-3: #828282;
+$grey-4: #BDBDBD;
+$grey-5: #E0E0E0;
+$grey-6: #F2F2F2;
+
+
+// spacer
+$spacer: 1rem;
+
+// breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;

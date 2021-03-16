@@ -1,0 +1,121 @@
+.hero.cont__us {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/assets/img/contact-bg.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+
+    .hero__content {
+        width: 100%;
+    }
+
+    .hero__title {
+        text-align: center;
+    }
+}
+
+.map {
+    min-height: 100vh;
+
+    iframe {
+        min-width: 100%;
+        min-height: inherit;
+    }
+}
+
+.form {
+    min-height: 60vh;
+    display: grid;
+
+    .container {
+        // background-color: violet;
+        position: relative;
+    }
+
+    .form__container {
+        min-height: 60vh;
+        background-color: var(--clr-primary);
+        position: absolute;
+        top: -50%;
+        left: 0;
+        right: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        box-shadow: 0px 100px 80px rgba(170, 69, 0, 0.06), 0px 41.7776px 33.4221px rgba(170, 69, 0, 0.0380366), 0px 22.3363px 17.869px rgba(170, 69, 0, 0.0257181), 0px 12.5216px 10.0172px rgba(170, 69, 0, 0.0161847), 0px 6.6501px 5.32008px rgba(170, 69, 0, 0.00851376), 0px 2.76726px 2.21381px rgba(170, 69, 0, 0.00266989);
+    }
+
+    &__formBox {
+        background-color: white;
+        padding: 2rem;
+
+        h3 {
+            color: $grey-1;
+            margin-bottom: 3rem;
+        }
+
+        .form-control {
+            padding: 1rem;
+            width: 100%;
+            border-radius: 3px;
+            background: rgba(255, 102, 0, 0.02);
+            border: none;
+            font-family: 'Titillium Web', sans-serif !important;
+
+            &::placeholder {
+                color: $grey-3;
+                font-weight: 300;
+                letter-spacing: 1px;
+                font-size: 0.8rem;
+            }
+        }
+
+        .form-control + .form-control {
+            margin-top: 2rem;
+        }
+    }
+
+    &__details {
+        background-color: var(--clr-primary);
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        padding: 4rem;
+
+        .contacts {
+            list-style: none;
+        }
+
+        .contact {
+            margin: 3rem 0;
+
+            img {
+                min-width: 30px;
+                height: auto;
+                margin-right: 1rem;
+            }
+            
+            span {
+                display: flex;
+                color: $grey-6;
+
+                a {
+                    color: $grey-6;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .hero.cont__us {
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/assets/img/contact-bg.jpg) no-repeat center left 20%/cover;
+    }
+
+    .form {
+        min-height: 100vh;
+        .form__container {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+}
